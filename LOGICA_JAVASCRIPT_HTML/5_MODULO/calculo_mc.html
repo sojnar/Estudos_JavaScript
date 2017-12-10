@@ -1,0 +1,46 @@
+<meta charset="UTF-8">
+
+<script>
+
+  function pulaLinha(){
+
+    document.write("<br>");
+    document.write("<br>");
+
+  }
+  
+  function mostra(frase){
+
+    document.write(frase);
+    pulaLinha();
+
+  }
+
+  function calculaImc(peso, altura, nome){
+
+    var imc = peso / (altura * altura);
+    mostra("O IMC calculado do " + nome + " é " +  Math.round(imc));
+    return imc;
+
+  }
+
+  function somaImc(x, y){
+
+    total = x + y;
+    mostra("A soma total o IMC é " + Math.round(total));
+    pulaLinha();
+
+  }
+
+  var pesoRogerio = 83;
+  var nome = "Rogerio";
+  var alturaRogerio = 1.82;
+  var imcRogerio = calculaImc(pesoRogerio, alturaRogerio,nome);
+  
+  var pesoEduardo = 80;
+  var nome = "Eduardo";
+  var alturaEduardo = 1.76;
+  var imcEduardo = calculaImc(pesoEduardo, alturaEduardo, nome);
+
+  somaImc (imcRogerio, imcEduardo);
+</script>
