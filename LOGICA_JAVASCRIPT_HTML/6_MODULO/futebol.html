@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<script>
+
+  function pulaLinha(){
+
+    document.write("<br>");
+    document.write("<br>");
+
+  }
+  
+  function mostra(frase){
+
+    document.write(frase);
+    pulaLinha();
+
+  }
+
+  function calculo(vitorias, empates){
+
+    total = vitorias * 3 + empates;
+    return total;
+  }
+ 
+  var nomeTime = prompt("Digite o nome do seu time: ");
+  var vitorias = parseInt(prompt("Digite a quantidade de vitorias do " +
+        nomeTime));
+  var empates = parseInt(prompt("Digite a quantidade de empates do " + nomeTime));
+
+  calculo(vitorias, empates);
+  mostra("A quantidade de vitorias do " + nomeTime + " é " + total);
+  
+</script>
