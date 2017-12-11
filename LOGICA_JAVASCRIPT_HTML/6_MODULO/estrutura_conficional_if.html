@@ -13,13 +13,14 @@
 
     document.write(frase);
     pulaLinha();
-
+  
   }
 
   function calculo(vitorias, empates){
 
     total = vitorias * 3 + empates;
     return total;
+  
   }
   
   function compara(atual, passado){
@@ -27,16 +28,19 @@
     if(atual > passado){
 
       mostra("Seu time esta melhor que o ano passado!");
+  
     }
 
     if(atual < passado){
 
       mostra("Seu time esta pior que o do ano passado!");
+    
     }
 
     if(atual == passado){
 
       mostra("Seu time esta igual ao time do ano passado!")
+    
     }
 
   }
